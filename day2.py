@@ -41,24 +41,20 @@ def findShape(opponentShape, winCode):
     return opponentShape
 
 # Part One
-results = []
 total = 0
 for [opponentShapeCode, myShapeCode] in guide:
   opponentShape = shapeCodes[opponentShapeCode]
   myShape = shapeCodes[myShapeCode]
   roundValue = myShape + shoot(opponentShape, myShape)
-  results.append(roundValue)
   total += roundValue
 print(total)
 
 # Part Two
-results = []
 total = 0
 for [opponentShapeCode, winCode] in guide:
   opponentShape = shapeCodes[opponentShapeCode]
   winValue = winCodes[winCode]
   myShape = findShape(opponentShape, winValue)
   roundValue = myShape + winValue
-  results.append(roundValue)
   total += roundValue
 print(total)
