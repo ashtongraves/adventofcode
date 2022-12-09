@@ -11,3 +11,4 @@ with open('day1.txt', 'r') as file:
 totals = list(map(lambda inventory: sum(inventory), inventories))
 totals.sort(reverse=True)
 print(totals[0])
+print(totals[0] + totals[1] + totals[2])
