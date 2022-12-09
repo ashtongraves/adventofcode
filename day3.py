@@ -1,6 +1,3 @@
-from webbrowser import get
-
-
 rucksacks = []
 with open('day3.txt', 'r') as file:
   rucksacks = file.read().splitlines()
